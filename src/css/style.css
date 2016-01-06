@@ -1,0 +1,63 @@
+body {
+  font-family: 'helvetica';
+}
+
+ul {
+  list-style: none;
+  padding: .5rem;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.main-list {
+  width: 40%;
+  float: left;
+  /*background: #efefef;*/
+  margin: 0 2.5%;
+}
+
+.dj-item {
+  background: #eee;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.dj-item-details {
+  margin: 1rem 0 0;
+}
+
+.dj-item-label {
+  font-style: italic;
+}
+
+.dj-item-value {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dj-item-heading {
+  position: relative;
+  z-index: 1;
+  font-size: 1.4rem;
+  margin: 0.5rem 0;
+  color: #245;
+}
+
+.dj-item-level {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #c99;
+  position: absolute;
+  left: -0.5rem;
+  top: -0.5rem;
+  z-index: 0;
+}
+
+.button {
+  float: right;
+}

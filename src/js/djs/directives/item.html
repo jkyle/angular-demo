@@ -1,0 +1,9 @@
+<li class="dj-item">
+  <h3 class="dj-item-heading">{{vm.dj.name}}</h3>
+  <p class="dj-item-details">
+    <span class="dj-item-label">Style:</span> <span class="dj-item-value">{{ vm.dj.style }}</span> |
+    <span class="dj-item-label">Jam Power:</span> <span class="dj-item-value">{{ vm.dj.jamPower }}</span>
+    <button class="button" ng-click="vm.addToTeam(vm.dj)">Add to Team</button>
+  </p>
+  <span class="dj-item-level">{{ vm.dj.level }}</span>
+</li>

@@ -1,0 +1,18 @@
+<section class="main-list dj-list">
+<h3>All DJs <button class="button" ng-click="vm.addNew()">Create New DJ</button></h3>
+
+<ul>
+  <!-- <li class="dj-item" ng-repeat="dj in vm.djs">
+    <h3 class="dj-item-heading">{{dj.name}}</h3>
+    <p class="dj-item-details">
+      <span class="dj-item-label">Style:</span> <span class="dj-item-value">{{ dj.style }}</span> |
+      <span class="dj-item-label">Jam Power:</span> <span class="dj-item-value">{{ dj.jamPower }}</span>
+      <button class="button" ng-click="vm.addToTeam(dj)">Add to Team</button>
+    </p>
+    <span class="dj-item-level">{{ dj.level }}</span>
+
+  </li> -->
+  <dj-item ng-repeat="dj in vm.djs"
+           dj="dj"></dj-item>
+</ul>
+</section>
