@@ -1,0 +1,13 @@
+<section class="main-list team-dj-list">
+<h3>Team</h3>
+<p ng-if="$ctrl.team.length <= 0">No team members.</p>
+<ul ng-if="$ctrl.team.length > 0">
+  <!-- <li ng-repeat="dj in $ctrl.team">
+    <h3>{{dj.name}}</h3>
+    <button class="button" ng-click="$ctrl.removeMember(dj.id)">Remove Member</button>
+  </li> -->
+  <team-dj-list-item ng-repeat="dj in $ctrl.team"
+                     dj="dj">
+  </team-dj-list-item>
+</ul>
+</section>

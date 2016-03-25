@@ -1,10 +1,8 @@
-'use strict';
+export default [function(){
 
-module.exports = [function(){
-
-  var adjective = ['Cool', 'Dope', 'Deadly', 'Funky', 'Slammin\''],
-      noun = ['Beats', 'Alpaca', 'U-Turn', 'Roundabout', 'Pinocchio', 'Angular', 'Space Monkey', 'Space 9'],
-      style = ['Hip Hop', 'Disco', 'House', 'Trance', 'Wedding', 'Karaoke', 'Trip Hop', 'Dubstep'];
+  var adjective = ['Cool', 'Dope', 'Deadly', 'Funky', 'Slammin\'', 'Supersonic', 'Ultra'],
+      noun = ['Dis B John', 'Beats', 'Alpaca', 'U-Turn', 'Roundabout', 'Pinocchio', 'Angular', 'Space Monkey', 'Space 9', 'Tomcat', 'Sound Machine'],
+      style = ['Hip Hop', 'Disco', 'House', 'Trance', 'Wedding', 'Karaoke', 'Trip Hop', 'Dubstep', 'Glitch', 'Gabber', 'Drumb \'n\' Bass'];
 
   function makeName(){
     return 'DJ ' + _.sample(adjective) + ' ' + _.sample(noun);

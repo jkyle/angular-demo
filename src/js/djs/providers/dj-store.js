@@ -1,22 +1,22 @@
 'use strict';
 
-var dummyData = [];
+const djData = []; // GET /api/djs
 
-module.exports = ['RandomData', function(RandomData){
+export default ['RandomData', function(RandomData){
 
   _.times(3, function(){
-    dummyData.push(RandomData.dj());
+    djData.push(RandomData.dj());
   })
 
   return {
     one: function(id){
-
+      return _.find(djData, {'id': id});
     },
     add: function(){
-      dummyData.push(RandomData.dj());
+      djData.push(RandomData.dj());
     },
     all: function(){
-      return dummyData;
+      return djData;
     }
   }
 }];

@@ -1,6 +1,10 @@
 'use strict';
 
-module.exports = angular.module('DJs', [])
-                        .factory('DJStore', require('./providers/dj-store'))
-                        .directive('djList', require('./directives/list'))
-                        .directive('djItem', require('./directives/item'));
+import djStore from './providers/dj-store.js';
+import djItem from './components/item/item';
+import djList from './components/list/list';
+
+export default angular.module('DJs', [])
+                        .factory('DJStore', djStore)
+                        .component('djList', djList)
+                        .component('djItem', djItem);

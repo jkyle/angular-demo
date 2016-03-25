@@ -1,0 +1,8 @@
+<section class="main-list dj-list">
+<h3>All DJs <button class="button" ng-click="$ctrl.addNew()">Create New DJ</button></h3>
+
+<ul>
+  <dj-item ng-repeat="dj in $ctrl.djs"
+           dj="dj"></dj-item>
+</ul>
+</section>

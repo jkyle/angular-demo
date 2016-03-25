@@ -1,12 +1,8 @@
-var angular = require('angular'),
-    route = require('angular-route'),
-    _ = require('lodash');
+import angular from 'angular';
+import _ from 'lodash';
 
-var djs = require('./djs'),
-    teams= require('./teams'),
-    appUtil = require('./app-util');
+import djs from './djs';
+import teams from './teams';
+import appUtil from './app-util';
 
-module.exports = angular.module('APP',['ngRoute',
-                                       djs.name,
-                                       appUtil.name,
-                                       teams.name]);
+export default angular.module('APP',[ djs.name, appUtil.name, teams.name]);

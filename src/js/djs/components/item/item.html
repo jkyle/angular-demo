@@ -1,0 +1,12 @@
+<li class="dj-item">
+  <h3 class="dj-item-heading">{{$ctrl.dj.name}}</h3>
+  <p class="dj-item-details">
+    <span class="dj-item-label">Style:</span> <span class="dj-item-value">{{ $ctrl.dj.style }}</span> |
+    <span class="dj-item-label">Jam Power:</span> <span class="dj-item-value">{{ $ctrl.dj.jamPower }}</span>
+    <!-- <button class="button" ng-click="$ctrl.addToTeam($ctrl.dj)">Add to Team</button> -->
+    <action-button title="$ctrl.buttonName"
+                   action="$ctrl.addToTeam($ctrl.dj)">
+    </action-button>
+  </p>
+  <span class="dj-item-level">{{ $ctrl.dj.level }}</span>
+</li>
